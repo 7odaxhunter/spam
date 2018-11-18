@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 
@@ -32,6 +32,7 @@ client.on('message', message => {
         message.channel.send('#credits')
     }
 });
+
 client.on('message', message => {
     if(message.content === '-ببب'){
         message.channel.send('#credits @!《SK》7odaX3Unter#6629 200')
@@ -58,7 +59,7 @@ client2.on('message', message => {
 
 client2.on('message', message => {
     if(message.content === '-ببب'){
-        message.channel.send('#credits 200 @!《SK》7odaX3Unter#6629')
+        message.channel.send('#credits @!《SK》7odaX3Unter#6629 200')
     }
 });
 
@@ -91,19 +92,6 @@ if (message.content === '!spam') {
         }
       }
 });
-
-client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!credits') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send('#credits @!《SK》7odaX3Unter#6629 200')
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
 
 
 
